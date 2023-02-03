@@ -1,0 +1,37 @@
+bookdown::gitbook:
+  css: style.css
+  config:
+    toc:
+      before: |
+        <li><a href="./">A Minimal Book Example</a></li>
+      after: |
+        <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+    edit: https://github.com/rstudio/bookdown-demo/edit/master/%s
+    download: ["pdf", "epub"]
+bookdown::pdf_book:
+  includes:
+    in_header: preamble.tex
+  latex_engine: xelatex
+  citation_package: natbib
+  keep_tex: yes
+bookdown::epub_book: default
+bookdown::markdown_document2:
+  fig_caption: TRUE
+  md_extensions: NULL
+  pandoc_args: NULL
+  base_format: rmarkdown::md_document
+bookdown::word_document:
+  toc: FALSE
+  toc_depth: 3
+  fig_width: 5
+  fig_height: 4
+  fig_caption: TRUE
+  df_print: default
+  smart: TRUE
+  highlight: default
+  reference_docx: default
+  keep_md: FALSE
+  md_extensions: NULL
+  pandoc_args: NULL
+
+

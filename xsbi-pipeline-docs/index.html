@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>xsbi pipeline</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css"> -->
+  <link rel="stylesheet" href="themeable-simple.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+  <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
+  <script src="//unpkg.com/docsify/lib/plugins/zoom-image.min.js"></script>
+  <script src="https://unpkg.com/docsify-themeable"></script>
+  <script src="//unpkg.com/docsify/lib/plugins/search.min.js"></script>
+  <script src="_js/markdown-it.min.js"></script>
+  <script src="_js/markdown-it-deflist.js"></script>
+  <script src="https://wzrd.in/standalone/markdown-it-attrs@latest" charset="utf-8"></script>
+  <script src="https://wzrd.in/standalone/markdown-it-footnote@latest" charset="utf-8"></script>
+  <script src="https://wzrd.in/standalone/markdown-it-task-list@latest" charset="utf-8"></script>
+
+  <div id="app"></div>
+  <script>
+    window.$docsify = {
+      name: '',
+      repo: '',
+      homepage: 'README.md',
+      coverpage: true,
+      relativePath: true,
+      logo: '/_media/sbi_eye.png',
+      pagination: {
+        previousText: 'Previous',
+        nextText: 'Next',
+        crossChapter: true,
+        crossChapterText: true
+      },
+      search : {
+      hideOtherSidebarContent: false,
+      paths: [
+      '/'            // => /README.md
+      ]}
+      // ,  
+      // plugins:[
+      // function (hook,vm) {
+      //           hook.beforeEach(function (html) {
+      //               var md = window.markdownit();
+
+      //               md.use(window.markdownItAttrs, {
+      //                   // optional, these are default options
+      //                   leftDelimiter: '{',
+      //                   rightDelimiter: '}',
+      //                   allowedAttributes: []  // empty array = all attributes are allowed
+      //               }).use(window.markdownItFootnote)
+      //               .use(window.markdownitDeflist)
+      //               .use(markdownItTaskList.default);
+      //               return md.render(html);
+      //           });
+      //   }
+      // ]
+    }
+  </script>
+</body>
+</html>
